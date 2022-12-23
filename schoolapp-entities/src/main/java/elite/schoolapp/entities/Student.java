@@ -26,7 +26,7 @@ public class Student extends Organization implements Serializable {
   private Long dateOfAdmission;
   private Gender gender;
   private Boolean isAlumni;
-  private String parentGuid;
+  private String parentUuid;
 
   public String getPRN() {
     return PRN;
@@ -180,11 +180,11 @@ public class Student extends Organization implements Serializable {
     this.isAlumni = isAlumni;
   }
 
-  public String getParentGuid() {
-    return parentGuid;
+  public String getParentUuid() {
+    return parentUuid;
   }
 
-  public void setParentGuid(String parentGuid) {
-    this.parentGuid = parentGuid;
+  public void setParentUuid(String parentUuid) {
+    this.parentUuid = parentUuid;
   }
 }

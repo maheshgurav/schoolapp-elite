@@ -5,31 +5,31 @@ import java.io.Serializable;
 public class Organization implements Serializable {
 
   private static final long serialVersionUID = 1L;
-  private String guid;
-  private String schoolGuid;
-  private String organizationGuid;
+  private String uuid;
+  private String schoolUuid;
+  private String organizationUuid;
 
-  public String getGuid() {
-    return guid;
+  public String getUuid() {
+    return uuid;
   }
 
-  public void setGuid(String guid) {
-    this.guid = guid;
+  public void setUuid(String uuid) {
+    this.uuid = uuid;
   }
 
-  public String getSchoolGuid() {
-    return schoolGuid;
+  public String getSchoolUuid() {
+    return schoolUuid;
   }
 
-  public void setSchoolGuid(String schoolGuid) {
-    this.schoolGuid = schoolGuid;
+  public void setSchoolUuid(String schoolUuid) {
+    this.schoolUuid = schoolUuid;
   }
 
-  public String getOrganizationGuid() {
-    return organizationGuid;
+  public String getOrganizationUuid() {
+    return organizationUuid;
   }
 
-  public void setOrganizationGuid(String organizationGuid) {
-    this.organizationGuid = organizationGuid;
+  public void setOrganizationUuid(String organizationUuid) {
+    this.organizationUuid = organizationUuid;
   }
 }

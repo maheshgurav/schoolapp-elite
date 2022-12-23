@@ -7,14 +7,14 @@ public class Certificate implements Serializable {
 
   private String name;
   private Float feePerCertificate;
-  private String guid;
+  private String uuid;
 
-  public void setGuid(String guid) {
-    this.guid = guid;
+  public void setUuid(String uuid) {
+    this.uuid = uuid;
   }
 
-  public String getGuid() {
-    return guid;
+  public String getUuid() {
+    return uuid;
   }
 
   public String getName() {

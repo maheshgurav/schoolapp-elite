@@ -4,24 +4,24 @@ import java.io.Serializable;
 
 public class District implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String guid;
+  private String uuid;
   private String name;
-  private String stateGuid;
+  private String stateUuid;
 
-  public String getGuid() {
-    return guid;
+  public String getUuid() {
+    return uuid;
   }
 
-  public void setGuid(String guid) {
-    this.guid = guid;
+  public void setUuid(String uuid) {
+    this.uuid = uuid;
   }
 
-  public String getStateGuid() {
-    return stateGuid;
+  public String getStateUuid() {
+    return stateUuid;
   }
 
-  public void setStateGuid(String stateGuid) {
-    this.stateGuid = stateGuid;
+  public void setStateUuid(String stateUuid) {
+    this.stateUuid = stateUuid;
   }
 
   public String getName() {

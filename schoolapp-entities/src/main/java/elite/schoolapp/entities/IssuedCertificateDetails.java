@@ -5,24 +5,24 @@ import java.sql.Timestamp;
 
 public class IssuedCertificateDetails implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String studentGuid;
-  private String certificateGuid;
+  private String studentUuid;
+  private String certificateUuid;
   private Timestamp dateOfIssue;
 
-  public String getStudentGuid() {
-    return studentGuid;
+  public String getStudentUuid() {
+    return studentUuid;
   }
 
-  public void setStudentGuid(String studentGuid) {
-    this.studentGuid = studentGuid;
+  public void setStudentUuid(String studentUuid) {
+    this.studentUuid = studentUuid;
   }
 
-  public String getCertificateGuid() {
-    return certificateGuid;
+  public String getCertificateUuid() {
+    return certificateUuid;
   }
 
-  public void setCertificateGuid(String certificateGuid) {
-    this.certificateGuid = certificateGuid;
+  public void setCertificateUuid(String certificateUuid) {
+    this.certificateUuid = certificateUuid;
   }
 
   public Timestamp getDateOfIssue() {
