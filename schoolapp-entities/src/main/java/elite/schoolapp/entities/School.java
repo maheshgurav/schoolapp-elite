@@ -6,26 +6,26 @@ public class School implements Serializable {
   /** */
   private static final long serialVersionUID = 1L;
 
-  private String uuid;
-  private String organizationUuid;
+  private String guid;
+  private String organizationGuid;
   private String name;
   private String address;
   private byte[] imageOrLogo;
 
-  public String getUuid() {
-    return uuid;
+  public String getGuid() {
+    return guid;
   }
 
-  public void setUuid(String uuid) {
-    this.uuid = uuid;
+  public void setGuid(String guid) {
+    this.guid = guid;
   }
 
-  public String getOrganizationUuid() {
-    return organizationUuid;
+  public String getOrganizationGuid() {
+    return organizationGuid;
   }
 
-  public void setOrganizationUuid(String organizationUuid) {
-    this.organizationUuid = organizationUuid;
+  public void setOrganizationGuid(String organizationGuid) {
+    this.organizationGuid = organizationGuid;
   }
 
   public String getName() {

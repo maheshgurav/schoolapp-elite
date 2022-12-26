@@ -4,33 +4,33 @@ import java.io.Serializable;
 
 public class ExamResultKey implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String studentUuid;
-  private String examUuid;
-  private String subjectUuid;
+  private String studentGuid;
+  private String examGuid;
+  private String subjectGuid;
   private String standardAndDivision;
 
-  public String getStudentUuid() {
-    return studentUuid;
+  public String getStudentGuid() {
+    return studentGuid;
   }
 
-  public void setStudentUuid(String studentUuid) {
-    this.studentUuid = studentUuid;
+  public void setStudentGuid(String studentGuid) {
+    this.studentGuid = studentGuid;
   }
 
-  public String getExamUuid() {
-    return examUuid;
+  public String getExamGuid() {
+    return examGuid;
   }
 
-  public void setExamUuid(String examUuid) {
-    this.examUuid = examUuid;
+  public void setExamGuid(String examGuid) {
+    this.examGuid = examGuid;
   }
 
-  public String getSubjectUuid() {
-    return subjectUuid;
+  public String getSubjectGuid() {
+    return subjectGuid;
   }
 
-  public void setSubjectUuid(String subjectUuid) {
-    this.subjectUuid = subjectUuid;
+  public void setSubjectGuid(String subjectGuid) {
+    this.subjectGuid = subjectGuid;
   }
 
   public String getStandardAndDivision() {

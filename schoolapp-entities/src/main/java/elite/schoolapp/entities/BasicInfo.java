@@ -4,15 +4,15 @@ import java.io.Serializable;
 
 public class BasicInfo implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String uuid;
+  private String guid;
   protected String name;
 
-  public String getUuid() {
-    return uuid;
+  public String getGuid() {
+    return guid;
   }
 
-  public void setUuid(String uuid) {
-    this.uuid = uuid;
+  public void setGuid(String guid) {
+    this.guid = guid;
   }
 
   public String getName() {

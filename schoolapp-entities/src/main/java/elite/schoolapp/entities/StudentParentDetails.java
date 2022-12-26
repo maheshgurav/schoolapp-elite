@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class StudentParentDetails implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String uuid;
+  private String guid;
   private Name nameOfFather;
   private Name nameOfMother;
   private Address permanentAddress;
@@ -15,16 +15,16 @@ public class StudentParentDetails implements Serializable {
   private Long birthDateOfMother;
   private String emailId;
 
-  private String studentUuid;
+  private String studentGuid;
   private String dateOfBirthOfFather;
   private String dateOfBirthOfMother;
 
-  public String getUuid() {
-    return uuid;
+  public String getGuid() {
+    return guid;
   }
 
-  public void setUuid(String uuid) {
-    this.uuid = uuid;
+  public void setGuid(String guid) {
+    this.guid = guid;
   }
 
   public Name getNameOfFather() {
@@ -99,12 +99,12 @@ public class StudentParentDetails implements Serializable {
     this.emailId = emailId;
   }
 
-  public String getStudentUuid() {
-    return studentUuid;
+  public String getStudentGuid() {
+    return studentGuid;
   }
 
-  public void setStudentUuid(String studentUuid) {
-    this.studentUuid = studentUuid;
+  public void setStudentGuid(String studentGuid) {
+    this.studentGuid = studentGuid;
   }
 
   public String getDateOfBirthOfFather() {

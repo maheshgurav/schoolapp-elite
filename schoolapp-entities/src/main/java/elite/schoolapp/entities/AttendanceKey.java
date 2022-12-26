@@ -5,16 +5,16 @@ import java.io.Serializable;
 public class AttendanceKey implements Serializable {
   private static final long serialVersionUID = 1L;
   private Long absentOn;
-  private String studentUuid;
+  private String studentGuid;
 
   public AttendanceKey() {
     super();
   }
 
-  public AttendanceKey(Long absentOn, String studentUuid) {
+  public AttendanceKey(Long absentOn, String studentGuid) {
     super();
     this.absentOn = absentOn;
-    this.studentUuid = studentUuid;
+    this.studentGuid = studentGuid;
   }
 
   public Long getAbsentOn() {
@@ -25,11 +25,11 @@ public class AttendanceKey implements Serializable {
     this.absentOn = absentOn;
   }
 
-  public String getStudentUuid() {
-    return studentUuid;
+  public String getStudentGuid() {
+    return studentGuid;
   }
 
-  public void setStudentUuid(String studentUuid) {
-    this.studentUuid = studentUuid;
+  public void setStudentGuid(String studentGuid) {
+    this.studentGuid = studentGuid;
   }
 }

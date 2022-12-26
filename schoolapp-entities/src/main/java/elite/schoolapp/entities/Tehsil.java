@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class Tehsil implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String uuid;
+  private String guid;
   private String name;
-  private String districtUuid;
+  private String districtGuid;
 
   public String getName() {
     return name;
@@ -16,19 +16,19 @@ public class Tehsil implements Serializable {
     this.name = name;
   }
 
-  public String getDistrictUuid() {
-    return districtUuid;
+  public String getDistrictGuid() {
+    return districtGuid;
   }
 
-  public void setDistrictUuid(String districtUuid) {
-    this.districtUuid = districtUuid;
+  public void setDistrictGuid(String districtGuid) {
+    this.districtGuid = districtGuid;
   }
 
-  public void setUuid(String uuid) {
-    this.uuid = uuid;
+  public void setGuid(String guid) {
+    this.guid = guid;
   }
 
-  public String getUuid() {
-    return uuid;
+  public String getGuid() {
+    return guid;
   }
 }

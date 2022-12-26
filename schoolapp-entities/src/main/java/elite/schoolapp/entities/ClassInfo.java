@@ -7,8 +7,8 @@ public class ClassInfo extends Organization implements Serializable {
 
   private String standardOrClass;
   private String division;
-  private String schoolTypeUuid;
-  private String classTeacherUuid;
+  private String schoolTypeGuid;
+  private String classTeacherGuid;
   private String subjectsAndTeachers;
 
   public String getStandardOrClass() {
@@ -27,12 +27,12 @@ public class ClassInfo extends Organization implements Serializable {
     this.division = division;
   }
 
-  public String getSchoolTypeUuid() {
-    return schoolTypeUuid;
+  public String getSchoolTypeGuid() {
+    return schoolTypeGuid;
   }
 
-  public void setSchoolTypeUuid(String schoolTypeUuid) {
-    this.schoolTypeUuid = schoolTypeUuid;
+  public void setSchoolTypeGuid(String schoolTypeGuid) {
+    this.schoolTypeGuid = schoolTypeGuid;
   }
 
   @Override
@@ -40,12 +40,12 @@ public class ClassInfo extends Organization implements Serializable {
     return standardOrClass + " - " + division;
   }
 
-  public String getClassTeacherUuid() {
-    return classTeacherUuid;
+  public String getClassTeacherGuid() {
+    return classTeacherGuid;
   }
 
-  public void setClassTeacherUuid(String classTeacherUuid) {
-    this.classTeacherUuid = classTeacherUuid;
+  public void setClassTeacherGuid(String classTeacherGuid) {
+    this.classTeacherGuid = classTeacherGuid;
   }
 
   public String getSubjectsAndTeachers() {

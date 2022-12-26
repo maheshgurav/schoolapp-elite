@@ -1,12 +1,20 @@
 package elite.schoolapp.entities;
 
 import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
+@Embeddable
 public class Address implements Serializable {
   private static final long serialVersionUID = 1L;
 
+  @Column(columnDefinition = "varchar(255)")
   private String address;
+
+  @Column(columnDefinition = "varchar(64)")
   private String state;
+
+  @Column(columnDefinition = "varchar(10)")
   private String pinCodeNumber;
 
   public String getAddress() {

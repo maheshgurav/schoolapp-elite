@@ -1,20 +1,35 @@
 package elite.schoolapp.entities;
 
 import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+import org.hibernate.annotations.GenericGenerator;
 
+@MappedSuperclass
 public class Organization implements Serializable {
 
   private static final long serialVersionUID = 1L;
-  private String uuid;
+
+  @Id
+  @GeneratedValue(generator = "uuid")
+  @GenericGenerator(name = "uuid", strategy = "uuid2")
+  @Column(columnDefinition = "varchar(64)")
+  private String id;
+
+  @Column(columnDefinition = "varchar(64)")
   private String schoolUuid;
+
+  @Column(columnDefinition = "varchar(64)")
   private String organizationUuid;
 
-  public String getUuid() {
-    return uuid;
+  public String getId() {
+    return id;
   }
 
-  public void setUuid(String uuid) {
-    this.uuid = uuid;
+  public void setId(String id) {
+    this.id = id;
   }
 
   public String getSchoolUuid() {

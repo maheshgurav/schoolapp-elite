@@ -4,26 +4,26 @@ import java.io.Serializable;
 
 public class SubjectsForExam implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String uuid;
-  private String subjectUuid;
+  private String guid;
+  private String subjectGuid;
   private SubjectEvaluationType subjectEvaluationType;
   private String marksOrGradesRequiredForPassing;
-  private String examUuid;
+  private String examGuid;
 
-  public String getUuid() {
-    return uuid;
+  public String getGuid() {
+    return guid;
   }
 
-  public void setUuid(String uuid) {
-    this.uuid = uuid;
+  public void setGuid(String guid) {
+    this.guid = guid;
   }
 
-  public String getSubjectUuid() {
-    return subjectUuid;
+  public String getSubjectGuid() {
+    return subjectGuid;
   }
 
-  public void setSubjectUuid(String subjectUuid) {
-    this.subjectUuid = subjectUuid;
+  public void setSubjectGuid(String subjectGuid) {
+    this.subjectGuid = subjectGuid;
   }
 
   public SubjectEvaluationType getSubjectEvaluationType() {
@@ -42,11 +42,11 @@ public class SubjectsForExam implements Serializable {
     this.marksOrGradesRequiredForPassing = marksOrGradesRequiredForPassing;
   }
 
-  public String getExamUuid() {
-    return examUuid;
+  public String getExamGuid() {
+    return examGuid;
   }
 
-  public void setExamUuid(String examUuid) {
-    this.examUuid = examUuid;
+  public void setExamGuid(String examGuid) {
+    this.examGuid = examGuid;
   }
 }

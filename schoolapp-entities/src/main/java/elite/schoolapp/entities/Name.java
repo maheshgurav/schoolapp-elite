@@ -1,11 +1,20 @@
 package elite.schoolapp.entities;
 
 import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
+@Embeddable
 public class Name implements Serializable {
   private static final long serialVersionUID = 1L;
+
+  @Column(columnDefinition = "varchar(64)")
   private String firstName;
+
+  @Column(columnDefinition = "varchar(64)")
   private String lastName;
+
+  @Column(columnDefinition = "varchar(64)")
   private String middleName;
 
   public String getFirstName() {

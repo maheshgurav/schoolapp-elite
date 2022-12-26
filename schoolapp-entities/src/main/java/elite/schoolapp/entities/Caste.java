@@ -5,36 +5,36 @@ import java.io.Serializable;
 public class Caste implements Serializable {
   private static final long serialVersionUID = 1L;
 
-  private String categoryUuid;
+  private String categoryGuid;
   private String religion;
   private String subcaste;
   private Boolean isMinority;
-  private String uuid;
+  private String guid;
   private Boolean isDefaultForAttendanceReport;
 
   public Caste() {}
 
-  public Caste(String categoryUuid, String religion, String subcaste, Boolean isMinority) {
-    this.categoryUuid = categoryUuid;
+  public Caste(String categoryGuid, String religion, String subcaste, Boolean isMinority) {
+    this.categoryGuid = categoryGuid;
     this.religion = religion;
     this.subcaste = religion;
     this.isMinority = isMinority;
   }
 
-  public void setUuid(String uuid) {
-    this.uuid = uuid;
+  public void setGuid(String guid) {
+    this.guid = guid;
   }
 
-  public String getUuid() {
-    return uuid;
+  public String getGuid() {
+    return guid;
   }
 
-  public String getCategoryUuid() {
-    return categoryUuid;
+  public String getCategoryGuid() {
+    return categoryGuid;
   }
 
-  public void setCategoryUuid(String categoryUuid) {
-    this.categoryUuid = categoryUuid;
+  public void setCategoryGuid(String categoryGuid) {
+    this.categoryGuid = categoryGuid;
   }
 
   public String getReligion() {

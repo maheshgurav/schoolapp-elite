@@ -4,25 +4,25 @@ import java.io.Serializable;
 
 public class ScholarShipDetails extends Organization implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String studentUuid;
-  private String scholarShipUuid;
+  private String studentGuid;
+  private String scholarShipGuid;
   private Long formSubmissionDate;
   private Long senctionedDate;
 
-  public String getStudentUuid() {
-    return studentUuid;
+  public String getStudentGuid() {
+    return studentGuid;
   }
 
-  public void setStudentUuid(String studentUuid) {
-    this.studentUuid = studentUuid;
+  public void setStudentGuid(String studentGuid) {
+    this.studentGuid = studentGuid;
   }
 
-  public String getScholarShipUuid() {
-    return scholarShipUuid;
+  public String getScholarShipGuid() {
+    return scholarShipGuid;
   }
 
-  public void setScholarShipUuid(String scholarShipUuid) {
-    this.scholarShipUuid = scholarShipUuid;
+  public void setScholarShipGuid(String scholarShipGuid) {
+    this.scholarShipGuid = scholarShipGuid;
   }
 
   public Long getFormSubmissionDate() {

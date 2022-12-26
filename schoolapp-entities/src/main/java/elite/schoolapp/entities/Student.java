@@ -1,21 +1,32 @@
 package elite.schoolapp.entities;
 
 import java.io.Serializable;
-
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@Entity
 @Table
 public class Student extends Organization implements Serializable {
   private static final long serialVersionUID = 1L;
   private String PRN;
   private String rollNumber;
+
+  @Column(columnDefinition = "varchar(255)")
+  @Embedded
   private Name name;
+
   private String firstNameOfMother;
   private String caste;
   private String category;
   private String scholarshipName;
   private Long dateOfBirth;
+
+  @Column(columnDefinition = "varchar(255)")
+  @Embedded
   private Address placeOfBirth;
+
   private String standard;
   private String division;
   private String addmissionTakenInclass;
@@ -26,7 +37,7 @@ public class Student extends Organization implements Serializable {
   private Long dateOfAdmission;
   private Gender gender;
   private Boolean isAlumni;
-  private String parentUuid;
+  private String parentGuid;
 
   public String getPRN() {
     return PRN;
@@ -180,11 +191,11 @@ public class Student extends Organization implements Serializable {
     this.isAlumni = isAlumni;
   }
 
-  public String getParentUuid() {
-    return parentUuid;
+  public String getParentGuid() {
+    return parentGuid;
   }
 
-  public void setParentUuid(String parentUuid) {
-    this.parentUuid = parentUuid;
+  public void setParentGuid(String parentGuid) {
+    this.parentGuid = parentGuid;
   }
 }

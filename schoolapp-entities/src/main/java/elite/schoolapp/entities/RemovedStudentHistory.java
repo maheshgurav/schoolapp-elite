@@ -4,16 +4,16 @@ import java.io.Serializable;
 
 public class RemovedStudentHistory implements Serializable {
   private static final long serialVersionUID = 1L;
-  private String studentUuid;
+  private String studentGuid;
   private Long dateOfRemoving;
   private String reasonOfRemovingFromCatalog;
 
-  public String getStudentUuid() {
-    return studentUuid;
+  public String getStudentGuid() {
+    return studentGuid;
   }
 
-  public void setStudentUuid(String studentUuid) {
-    this.studentUuid = studentUuid;
+  public void setStudentGuid(String studentGuid) {
+    this.studentGuid = studentGuid;
   }
 
   public Long getDateOfRemoving() {
