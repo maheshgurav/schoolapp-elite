@@ -1,10 +1,8 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class LeavingCertificate {
 
-public class LeavingCertificate implements Serializable {
-  private static final long serialVersionUID = 1L;
-  private String studentGuid;
+  private String studentUuid;
   private String progress;
   private String conduct;
   private String reasonOfLeaving;
@@ -12,12 +10,12 @@ public class LeavingCertificate implements Serializable {
   private Long dateOfLeaving;
   private String studyingSinceMonthAndYear;
 
-  public String getStudentGuid() {
-    return studentGuid;
+  public String getStudentUuid() {
+    return studentUuid;
   }
 
-  public void setStudentGuid(String studentGuid) {
-    this.studentGuid = studentGuid;
+  public void setStudentUuid(String studentUuid) {
+    this.studentUuid = studentUuid;
   }
 
   public String getProgress() {

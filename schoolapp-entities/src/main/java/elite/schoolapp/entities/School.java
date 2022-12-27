@@ -1,31 +1,28 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class School implements Serializable {
+public class School {
   /** */
-  private static final long serialVersionUID = 1L;
+  private  String uuid;
 
-  private String guid;
-  private String organizationGuid;
+  private String organizationUuid;
   private String name;
   private String address;
   private byte[] imageOrLogo;
 
-  public String getGuid() {
-    return guid;
+  public String getUuid() {
+    return uuid;
   }
 
-  public void setGuid(String guid) {
-    this.guid = guid;
+  public void setUuid( String uuid) {
+    this.uuid = uuid;
   }
 
-  public String getOrganizationGuid() {
-    return organizationGuid;
+  public String getOrganizationUuid() {
+    return organizationUuid;
   }
 
-  public void setOrganizationGuid(String organizationGuid) {
-    this.organizationGuid = organizationGuid;
+  public void setOrganizationUuid(String organizationUuid) {
+    this.organizationUuid = organizationUuid;
   }
 
   public String getName() {

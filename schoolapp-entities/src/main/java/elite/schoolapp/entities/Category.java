@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class Category extends BasicInfo implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class Category extends BasicInfo {
   private Boolean isDefaultForAttendanceReport;
 
   public Boolean getIsDefaultForAttendanceReport() {

@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class Filter implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class Filter {
 
   private String filterName;
   private Object filterValue;

@@ -1,13 +1,10 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class SubjectAndTeacherDetails implements Serializable {
+public class SubjectAndTeacherDetails {
 
   /** */
-  private static final long serialVersionUID = 1L;
-
   private Subject subject;
+
   private Teacher teacher;
 
   public Subject getSubject() {

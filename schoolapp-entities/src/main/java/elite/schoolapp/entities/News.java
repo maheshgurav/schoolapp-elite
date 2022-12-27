@@ -1,12 +1,9 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class News extends Organization implements Serializable {
+public class News extends Organization {
   /** */
-  private static final long serialVersionUID = 1L;
-
   private String topic;
+
   private String description;
 
   public String getTopic() {

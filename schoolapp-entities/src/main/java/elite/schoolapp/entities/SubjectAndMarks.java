@@ -1,9 +1,7 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class SubjectAndMarks {
 
-public class SubjectAndMarks implements Serializable {
-  private static final long serialVersionUID = 1L;
   private String subject;
   private String marks;
   private String marksRequiredForPassing;

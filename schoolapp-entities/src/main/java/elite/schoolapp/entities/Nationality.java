@@ -1,9 +1,7 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class Nationality {
 
-public class Nationality implements Serializable {
-  private static final long serialVersionUID = 1L;
   private String name;
 
   public String getName() {

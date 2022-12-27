@@ -1,36 +1,34 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class ExamResultKey {
 
-public class ExamResultKey implements Serializable {
-  private static final long serialVersionUID = 1L;
-  private String studentGuid;
-  private String examGuid;
-  private String subjectGuid;
+  private String studentUuid;
+  private String examUuid;
+  private String subjectUuid;
   private String standardAndDivision;
 
-  public String getStudentGuid() {
-    return studentGuid;
+  public String getStudentUuid() {
+    return studentUuid;
   }
 
-  public void setStudentGuid(String studentGuid) {
-    this.studentGuid = studentGuid;
+  public void setStudentUuid(String studentUuid) {
+    this.studentUuid = studentUuid;
   }
 
-  public String getExamGuid() {
-    return examGuid;
+  public String getExamUuid() {
+    return examUuid;
   }
 
-  public void setExamGuid(String examGuid) {
-    this.examGuid = examGuid;
+  public void setExamUuid(String examUuid) {
+    this.examUuid = examUuid;
   }
 
-  public String getSubjectGuid() {
-    return subjectGuid;
+  public String getSubjectUuid() {
+    return subjectUuid;
   }
 
-  public void setSubjectGuid(String subjectGuid) {
-    this.subjectGuid = subjectGuid;
+  public void setSubjectUuid(String subjectUuid) {
+    this.subjectUuid = subjectUuid;
   }
 
   public String getStandardAndDivision() {

@@ -1,10 +1,7 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class DBOperationEntity {
 
-public class DBOperationEntity implements Serializable {
-
-  private static final long serialVersionUID = 1L;
   private Object entity;
   private String updateOnField;
   private CrudOperations crudOperations;

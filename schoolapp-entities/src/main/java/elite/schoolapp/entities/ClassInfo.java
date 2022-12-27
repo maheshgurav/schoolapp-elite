@@ -1,14 +1,10 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class ClassInfo extends Organization implements Serializable {
-  private static final long serialVersionUID = 1L;
-
+public class ClassInfo extends Organization {
   private String standardOrClass;
   private String division;
-  private String schoolTypeGuid;
-  private String classTeacherGuid;
+  private String schoolTypeUuid;
+  private String classTeacherUuid;
   private String subjectsAndTeachers;
 
   public String getStandardOrClass() {
@@ -27,12 +23,12 @@ public class ClassInfo extends Organization implements Serializable {
     this.division = division;
   }
 
-  public String getSchoolTypeGuid() {
-    return schoolTypeGuid;
+  public String getSchoolTypeUuid() {
+    return schoolTypeUuid;
   }
 
-  public void setSchoolTypeGuid(String schoolTypeGuid) {
-    this.schoolTypeGuid = schoolTypeGuid;
+  public void setSchoolTypeUuid(String schoolTypeUuid) {
+    this.schoolTypeUuid = schoolTypeUuid;
   }
 
   @Override
@@ -40,12 +36,12 @@ public class ClassInfo extends Organization implements Serializable {
     return standardOrClass + " - " + division;
   }
 
-  public String getClassTeacherGuid() {
-    return classTeacherGuid;
+  public String getClassTeacherUuid() {
+    return classTeacherUuid;
   }
 
-  public void setClassTeacherGuid(String classTeacherGuid) {
-    this.classTeacherGuid = classTeacherGuid;
+  public void setClassTeacherUuid(String classTeacherUuid) {
+    this.classTeacherUuid = classTeacherUuid;
   }
 
   public String getSubjectsAndTeachers() {

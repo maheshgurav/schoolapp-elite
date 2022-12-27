@@ -1,6 +1,5 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
@@ -8,8 +7,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Student extends Organization implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class Student extends Organization {
+
   private String PRN;
   private String rollNumber;
 
@@ -37,7 +36,7 @@ public class Student extends Organization implements Serializable {
   private Long dateOfAdmission;
   private Gender gender;
   private Boolean isAlumni;
-  private String parentGuid;
+  private String parentUuid;
 
   public String getPRN() {
     return PRN;
@@ -191,11 +190,11 @@ public class Student extends Organization implements Serializable {
     this.isAlumni = isAlumni;
   }
 
-  public String getParentGuid() {
-    return parentGuid;
+  public String getParentUuid() {
+    return parentUuid;
   }
 
-  public void setParentGuid(String parentGuid) {
-    this.parentGuid = parentGuid;
+  public void setParentUuid(String parentUuid) {
+    this.parentUuid = parentUuid;
   }
 }

@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class ClassWiseSubjects extends Organization implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class ClassWiseSubjects extends Organization {
   private String subjects;
 
   public String getSubjects() {

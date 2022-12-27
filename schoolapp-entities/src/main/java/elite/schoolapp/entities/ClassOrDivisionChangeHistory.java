@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class ClassOrDivisionChangeHistory implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class ClassOrDivisionChangeHistory {
   private String id;
   private String studentId;
   private String previousStandard;

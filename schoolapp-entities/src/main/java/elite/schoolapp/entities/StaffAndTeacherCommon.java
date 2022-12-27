@@ -1,9 +1,7 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class StaffAndTeacherCommon extends GeneralInformation {
 
-public class StaffAndTeacherCommon extends GeneralInformation implements Serializable {
-  private static final long serialVersionUID = 1L;
   private String qualification;
   private String designation;
   private String panCardNumber;

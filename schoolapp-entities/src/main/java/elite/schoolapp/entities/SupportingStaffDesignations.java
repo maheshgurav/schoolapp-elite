@@ -1,9 +1,7 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class SupportingStaffDesignations {
 
-public class SupportingStaffDesignations implements Serializable {
-  private static final long serialVersionUID = 1L;
   private String name;
   private Boolean hasAssociatedLoginInformation;
 

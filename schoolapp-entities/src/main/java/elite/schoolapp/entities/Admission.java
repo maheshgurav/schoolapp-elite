@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class Admission extends BasicStudentInfo implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class Admission extends BasicStudentInfo {
   private String classForAdmission;
   private String marksOrGradeOfLastClass;
   private String lastAttendedUniversity;

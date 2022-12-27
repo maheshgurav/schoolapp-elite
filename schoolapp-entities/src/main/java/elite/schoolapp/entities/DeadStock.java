@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class DeadStock extends Organization implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class DeadStock extends Organization {
 
   private String name;
 

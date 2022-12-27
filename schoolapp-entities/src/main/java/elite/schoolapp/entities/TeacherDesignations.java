@@ -1,10 +1,7 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class TeacherDesignations {
 
-public class TeacherDesignations implements Serializable {
-
-  private static final long serialVersionUID = 1L;
   private String name;
 
   public String getName() {

@@ -1,6 +1,5 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -8,9 +7,7 @@ import javax.persistence.MappedSuperclass;
 import org.hibernate.annotations.GenericGenerator;
 
 @MappedSuperclass
-public class Organization implements Serializable {
-
-  private static final long serialVersionUID = 1L;
+public class Organization {
 
   @Id
   @GeneratedValue(generator = "uuid")

@@ -1,21 +1,20 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
 import java.sql.Timestamp;
 
-public class LoginHistory extends Organization implements Serializable {
-  private static final long serialVersionUID = 1L;
-  private String userGuid;
+public class LoginHistory extends Organization {
+
+  private String userUuid;
   private Timestamp lastLogin;
   private Integer failedLoginAttemptCount;
   private LoginStatus loginStatus;
 
-  public String getUserGuid() {
-    return userGuid;
+  public String getUserUuid() {
+    return userUuid;
   }
 
-  public void setUserGuid(String userGuid) {
-    this.userGuid = userGuid;
+  public void setUserUuid(String userUuid) {
+    this.userUuid = userUuid;
   }
 
   public Integer getFailedLoginAttemptCount() {

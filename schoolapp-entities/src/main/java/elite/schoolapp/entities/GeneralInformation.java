@@ -1,9 +1,7 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class GeneralInformation extends Organization {
 
-public class GeneralInformation extends Organization implements Serializable {
-  private static final long serialVersionUID = 1L;
   private Name name;
   private Long dateOfBirth;
   private Address permanentAddress;

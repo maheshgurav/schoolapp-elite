@@ -1,13 +1,10 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class SchoolEvents extends Organization implements Serializable {
+public class SchoolEvents extends Organization {
 
   /** */
-  private static final long serialVersionUID = 1L;
-
   private String name;
+
   private String details;
   private Long startDate;
   private Long endDate;

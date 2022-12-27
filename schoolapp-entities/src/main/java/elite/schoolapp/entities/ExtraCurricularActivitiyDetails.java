@@ -1,19 +1,17 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class ExtraCurricularActivitiyDetails {
 
-public class ExtraCurricularActivitiyDetails implements Serializable {
-  private static final long serialVersionUID = 1L;
-  private String studentGuid;
+  private String studentUuid;
   private String activityName;
   private String priceDetails;
 
-  public String getStudentGuid() {
-    return studentGuid;
+  public String getStudentUuid() {
+    return studentUuid;
   }
 
-  public void setStudentGuid(String studentGuid) {
-    this.studentGuid = studentGuid;
+  public void setStudentUuid(String studentUuid) {
+    this.studentUuid = studentUuid;
   }
 
   public String getActivityName() {

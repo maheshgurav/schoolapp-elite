@@ -1,10 +1,9 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
 import java.sql.Timestamp;
 
-public class Holiday extends Organization implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class Holiday extends Organization {
+
   private String name;
   private Timestamp datedTo;
 

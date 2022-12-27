@@ -1,10 +1,9 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class PaginationObject implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class PaginationObject {
+
   private Long recordCount;
   private List<Object> records;
 

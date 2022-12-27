@@ -1,11 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class Circular extends Organization implements Serializable {
-  /** */
-  private static final long serialVersionUID = 1L;
-
+public class Circular extends Organization {
   private String name;
   private byte[] actualCircular;
 

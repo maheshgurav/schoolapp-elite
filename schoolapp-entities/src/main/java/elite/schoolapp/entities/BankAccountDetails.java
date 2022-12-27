@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class BankAccountDetails implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class BankAccountDetails {
   private String IFSCCode;
   private String accountNumber;
   private String nameOfBank;

@@ -1,12 +1,10 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class Name implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class Name {
 
   @Column(columnDefinition = "varchar(64)")
   private String firstName;

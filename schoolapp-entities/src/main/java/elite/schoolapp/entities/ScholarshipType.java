@@ -1,8 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class ScholarshipType extends BasicInfo implements Serializable {
+public class ScholarshipType extends BasicInfo {
   private Boolean isDefaultForAttendanceReport;
 
   public Boolean getIsDefaultForAttendanceReport() {
@@ -12,6 +10,4 @@ public class ScholarshipType extends BasicInfo implements Serializable {
   public void setIsDefaultForAttendanceReport(Boolean isDefaultForAttendanceReport) {
     this.isDefaultForAttendanceReport = isDefaultForAttendanceReport;
   }
-
-  private static final long serialVersionUID = 1L;
 }

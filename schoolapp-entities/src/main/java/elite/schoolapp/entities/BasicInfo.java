@@ -1,18 +1,15 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class BasicInfo implements Serializable {
-  private static final long serialVersionUID = 1L;
-  private String guid;
+public class BasicInfo {
+  private  String uuid;
   protected String name;
 
-  public String getGuid() {
-    return guid;
+  public String getUuid() {
+    return uuid;
   }
 
-  public void setGuid(String guid) {
-    this.guid = guid;
+  public void setUuid( String uuid) {
+    this.uuid = uuid;
   }
 
   public String getName() {

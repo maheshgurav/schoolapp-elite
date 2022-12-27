@@ -1,9 +1,7 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class Guardian {
 
-public class Guardian implements Serializable {
-  private static final long serialVersionUID = 1L;
   private String studentId;
   private Name name;
   private Address permanentAddress;

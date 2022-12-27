@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class SelectValues implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class SelectValues {
 
   public SelectValues() {
     super();

@@ -1,9 +1,6 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
-
-public class IncomeDetails extends IncomeExpenseBase implements Serializable {
-  private static final long serialVersionUID = 1L;
+public class IncomeDetails extends IncomeExpenseBase {
 
   private String incomeFrom;
 

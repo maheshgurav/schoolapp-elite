@@ -1,12 +1,10 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class Tehsil {
 
-public class Tehsil implements Serializable {
-  private static final long serialVersionUID = 1L;
-  private String guid;
+  private  String uuid;
   private String name;
-  private String districtGuid;
+  private String districtUuid;
 
   public String getName() {
     return name;
@@ -16,19 +14,19 @@ public class Tehsil implements Serializable {
     this.name = name;
   }
 
-  public String getDistrictGuid() {
-    return districtGuid;
+  public String getDistrictUuid() {
+    return districtUuid;
   }
 
-  public void setDistrictGuid(String districtGuid) {
-    this.districtGuid = districtGuid;
+  public void setDistrictUuid(String districtUuid) {
+    this.districtUuid = districtUuid;
   }
 
-  public void setGuid(String guid) {
-    this.guid = guid;
+  public void setUuid( String uuid) {
+    this.uuid = uuid;
   }
 
-  public String getGuid() {
-    return guid;
+  public String getUuid() {
+    return uuid;
   }
 }

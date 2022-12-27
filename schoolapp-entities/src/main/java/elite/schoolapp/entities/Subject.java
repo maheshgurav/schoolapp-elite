@@ -1,20 +1,18 @@
 package elite.schoolapp.entities;
 
-import java.io.Serializable;
+public class Subject {
 
-public class Subject implements Serializable {
-  private static final long serialVersionUID = 1L;
-  private String guid;
+  private  String uuid;
   private String name;
   private String code;
   private String defaultForClasses;
 
-  public String getGuid() {
-    return guid;
+  public String getUuid() {
+    return uuid;
   }
 
-  public void setGuid(String guid) {
-    this.guid = guid;
+  public void setUuid( String uuid) {
+    this.uuid = uuid;
   }
 
   public String getName() {
